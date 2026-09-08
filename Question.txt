@@ -1,0 +1,203 @@
+===================================================================
+MEDIA AND INFORMATION LITERACY (MIL) - FINAL EXAMINATION
+===================================================================
+
+QUESTION 1:
+Which of the following best defines Information Literacy?
+A. The ability to record high-definition video clips using mobile devices.
+B. The ability to recognize when information is needed, and locate, evaluate, and effectively use it.
+C. The skill of typing quickly on a physical or touch keyboard.
+D. The capacity to configure network hardware and internet routers.
+ANSWER: B
+
+QUESTION 2:
+What term refers to the primary channels of communication through which news, entertainment, education, and data are disseminated?
+A. Media
+B. Software
+C. Bandwidth
+D. Protocol
+ANSWER: A
+
+QUESTION 3:
+Which type of media relies on paper publication and physical distribution, such as newspapers, magazines, and books?
+A. Broadcast Media
+B. Print Media
+C. Digital Media
+D. Streaming Media
+ANSWER: B
+
+QUESTION 4:
+Which term describes the convergence of traditional media outlets with digital platforms and computer networks?
+A. Analog Broadcast
+B. Media Convergence
+C. Frequency Modulation
+D. Telecommunication Compression
+ANSWER: B
+
+QUESTION 5:
+What critical skill allows an individual to analyze, evaluate, and create messages in a wide variety of forms?
+A. Media Literacy
+B. Computer Programming
+C. Graphic Rendering
+D. Network Administration
+ANSWER: A
+
+QUESTION 6:
+What form of copyright license allows creators to grant public permission to use their creative work under specific conditions?
+A. Patent Right
+B. Creative Commons
+C. Trade Secret
+D. Proprietary Encryption
+ANSWER: B
+
+QUESTION 7:
+Which of the following describes "Digital Divide"?
+A. The speed difference between fiber optic and satellite internet connection.
+B. The gap between demographic groups that have access to modern information and communications technology and those that do not.
+C. The division of code into frontend and backend programming frameworks.
+D. The separation of television signals into high-definition and standard definition channels.
+ANSWER: B
+
+QUESTION 8:
+Which law protects original works of authorship, such as literature, music, and art, automatically from the moment of creation?
+A. Trademark Law
+B. Copyright Law
+C. Patent Act
+D. Antitrust Legislation
+ANSWER: B
+
+QUESTION 9:
+What is the term for presenting someone else's work, ideas, or words as your own without proper attribution?
+A. Plagiarism
+B. Citation
+C. Fair Use
+D. Public Domain
+ANSWER: A
+
+QUESTION 10:
+Under copyright law, what doctrine permits limited use of copyrighted material without permission for purposes such as criticism, news reporting, teaching, or research?
+A. Intellectual Monopolization
+B. Fair Use
+C. Open Source Protocol
+D. Digital Rights Enforcement
+ANSWER: B
+
+QUESTION 11:
+Which of the following is considered an ethical guideline for online behavior, often referred to as "Netiquette"?
+A. Sharing personal passwords with close friends for security backup.
+B. Respecting others' privacy and avoiding hate speech or harassment.
+C. Downloading pirated software using peer-to-peer networks.
+D. Posting unverified claims anonymously to generate discussion.
+ANSWER: B
+
+QUESTION 12:
+What term refers to false or misleading information that is spread intentionally to deceive people?
+A. Misinformation
+B. Disinformation
+C. Malinformation
+D. Uninformed News
+ANSWER: B
+
+QUESTION 13:
+What is false information spread regardless of whether there is intent to deceive?
+A. Misinformation
+B. Disinformation
+C. Defamation
+D. Propaganda
+ANSWER: A
+
+QUESTION 14:
+Which of the following is a key characteristic of reliable news sources?
+A. Anonymous authors without credentials or contact info.
+B. Sensationalized clickbait headlines designed to shock readers.
+C. Editorial standards, transparent sources, and fact-checking processes.
+D. Exclusive reliance on unsourced social media rumors.
+ANSWER: C
+
+QUESTION 15:
+What media era began with the invention of the printing press by Johannes Gutenberg in the 15th century?
+A. Industrial / Print Era
+B. Pre-Industrial Era
+C. Electronic Era
+D. Information / Digital Era
+ANSWER: A
+
+QUESTION 16:
+Which of the following technologies dominated the Electronic Age of media?
+A. Clay Tablets and Papyrus
+B. Radio, Television, and Transistor Circuits
+C. Artificial Intelligence and Cloud Computing
+D. Stone Carvings and Cave Paintings
+ANSWER: B
+
+QUESTION 17:
+What is an "Echo Chamber" in the context of digital social media algorithms?
+A. An audio filter used in podcast recording software.
+B. An environment where a person only encounters information that reflects and reinforces their own opinions.
+C. A network latency issue causing voice delays in video conferencing.
+D. A public discussion forum where all opposing viewpoints are given equal broadcasting time.
+ANSWER: B
+
+QUESTION 18:
+What is the primary function of a search engine algorithm?
+A. To generate original creative novels automatically.
+B. To index web pages and rank search results based on relevance and authority.
+C. To prevent computer viruses from infecting client operating systems.
+D. To convert text documents into audio recordings.
+ANSWER: B
+
+QUESTION 19:
+Which term refers to the trail of data you create while using the internet, including visited websites, emails sent, and information submitted online?
+A. Digital Footprint
+B. Cyber Footprint
+C. IP Log
+D. Web Cache
+ANSWER: A
+
+QUESTION 20:
+What security measure uses two different authentication factors to verify a user's identity before granting account access?
+A. Single Sign-On (SSO)
+B. Two-Factor Authentication (2FA)
+C. Biometric Encryption
+D. Password Hashing
+ANSWER: B
+
+QUESTION 21:
+Which type of cyber threat involves deceptive emails or websites designed to trick users into revealing sensitive credentials or financial details?
+A. Phishing
+B. Ransomware
+C. Trojan Horse
+D. Keylogging
+ANSWER: A
+
+QUESTION 22:
+What type of media content allows users to interact actively with the platform (e.g., polls, comment sections, video games, online quizzes)?
+A. Passive Media
+B. Interactive Media
+C. Static Media
+D. Linear Broadcast
+ANSWER: B
+
+QUESTION 23:
+What is "Citizen Journalism"?
+A. News coverage conducted exclusively by government press secretaries.
+B. The collection, dissemination, and analysis of news and information by the general public using mobile devices and web platforms.
+C. Journalism practiced only by citizens holding accredited university degrees in communications.
+D. Corporate broadcast networks operating in capital cities.
+ANSWER: B
+
+QUESTION 24:
+What term describes software designed specifically to gain unauthorized access, cause harm, or steal information from a computer system?
+A. Firmware
+B. Malware
+C. Shareware
+D. Middleware
+ANSWER: B
+
+QUESTION 25:
+Why is critical thinking essential when consuming information on social media?
+A. Because social media platforms guarantee 100% verified news accuracy.
+B. Because anyone can publish content online without peer review or editorial oversight.
+C. Because social media content cannot be shared or forwarded.
+D. Because digital algorithms automatically filter out all bias and false claims.
+ANSWER: B

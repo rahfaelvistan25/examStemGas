@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIL Online Examination Portal | High School Portal</title>
+  <meta name="description" content="Responsive modern online exam portal with offline capabilities, state persistence, anti-cheating, and meme feedback.">
+  <meta name="theme-color" content="#6366f1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Application Navigation Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-icon">🎓</div>
+      <div>
+        <h1 class="brand-title">Media & Info Literacy Portal</h1>
+        <span class="brand-subtitle">First Term Final Examination</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- Network Status Badge (PWA) -->
+      <div id="network-status-badge" class="status-badge">
+        <span class="status-dot"></span> Online
+      </div>
+
+      <!-- 2-Hour Resilient Countdown Timer -->
+      <div id="timer-pill" class="timer-pill">
+        <span>⏱️</span>
+        <span id="timer-countdown">02:00:00</span>
+      </div>
+
+      <!-- Theme Switcher -->
+      <button id="btn-toggle-theme" class="icon-btn" title="Toggle Theme">
+        🌓
+      </button>
+
+      <!-- Teacher Portal Access Button -->
+      <button id="btn-teacher-portal" class="icon-btn" title="Teacher Access">
+        🔐
+      </button>
+
+      <!-- Active User Profile Pill -->
+      <div id="header-user-pill" class="user-pill">
+        <div id="header-user-avatar" class="user-avatar">?</div>
+        <span id="header-user-display">@guest</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout Container -->
+  <main class="app-container">
+
+    <!-- VIEW 1: AUTHENTICATION & USERNAME GENERATION -->
+    <section id="view-auth" class="view-section active">
+      <div class="auth-wrapper glass-card">
+        <div class="auth-header">
+          <h1>Student Registration</h1>
+          <p>Please enter your legal name to generate your unique examination credentials.</p>
+        </div>
+
+        <form id="auth-form">
+          <div class="form-group">
+            <label for="reg-firstname">First Name *</label>
+            <input type="text" id="reg-firstname" class="form-input" placeholder="e.g. John" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-middlename">Middle Name (Optional)</label>
+            <input type="text" id="reg-middlename" class="form-input" placeholder="e.g. David">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-lastname">Last Name *</label>
+            <input type="text" id="reg-lastname" class="form-input" placeholder="e.g. Smith" required>
+          </div>
+
+          <!-- Live Username Preview Box -->
+          <div class="username-preview-box">
+            <div>
+              <div class="username-preview-label">Auto-Generated Username</div>
+              <div id="username-tag-preview" class="username-tag">@firstname.middlename.lastname</div>
+            </div>
+            <span style="font-size: 1.2rem;">✨</span>
+          </div>
+
+
+          <button type="submit" class="btn-primary" style="margin-top: 1rem;">
+            <span>Begin Examination</span> →
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VIEW 2: EXAM INTERFACE -->
+    <section id="view-exam" class="view-section">
+      <div class="exam-grid-container">
+
+        <!-- Sidebar: Question Palette & Navigation -->
+        <aside class="exam-sidebar glass-card">
+          <div class="sidebar-header">
+            <h2 class="sidebar-title">Question Grid</h2>
+            <div id="auto-save-status" class="auto-save-indicator">
+              <span>✔ Saved to local storage</span>
+            </div>
+          </div>
+
+          <!-- Color Legend -->
+          <div class="legend-container">
+            <div class="legend-item"><span class="legend-dot answered"></span> Answered</div>
+            <div class="legend-item"><span class="legend-dot unanswered"></span> Unanswered</div>
+            <div class="legend-item"><span class="legend-dot flagged"></span> Flagged</div>
+            <div class="legend-item"><span class="legend-dot active"></span> Active</div>
+          </div>
+
+          <!-- Question Grid Buttons -->
+          <div id="question-nav-grid" class="question-nav-grid">
+            <!-- Dynamically populated 1..N -->
+          </div>
+
+          <div class="sidebar-actions">
+            <button id="btn-submit-exam-sidebar" class="btn-primary" style="background: linear-gradient(135deg, var(--accent-emerald), #059669);">
+              Finish & Submit Exam
+            </button>
+          </div>
+        </aside>
+
+        <!-- Main Question Card Panel -->
+        <article class="question-card-wrapper glass-card no-select">
+          <div class="question-header">
+            <div class="question-meta">
+              <span id="q-number-tag" class="question-number-tag">Question 1</span>
+              <span id="q-count-badge" class="question-count-badge">Item 1 of 25</span>
+            </div>
+            <button id="flag-question-btn" class="flag-btn">
+              🏳️ Flag for Review
+            </button>
+          </div>
+
+          <!-- Question Prompt Text -->
+          <div id="q-text-box" class="question-text-box">
+            Loading examination item...
+          </div>
+
+          <!-- Options List (A, B, C, D) -->
+          <div id="options-list" class="options-list">
+            <!-- Dynamically rendered options -->
+          </div>
+
+          <!-- Question Bottom Navigation Controls -->
+          <div class="question-nav-controls">
+            <button id="btn-prev-question" class="btn-secondary" disabled>
+              ← Previous
+            </button>
+            <button id="btn-next-question" class="btn-secondary">
+              Next Question →
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- VIEW 3: SUBMISSION & MEME FEEDBACK VIEW -->
+    <section id="view-submission" class="view-section">
+      <div class="submission-wrapper glass-card">
+        <div class="submission-header-icon">🎉</div>
+        <h2 class="submission-title">Exam Submitted Successfully!</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Your answers have been securely recorded and synced to storage.</p>
+
+        <!-- Dynamic Meme Feedback Card -->
+        <div id="submission-meme-container">
+          <!-- Dynamically populated meme card based on performance tier -->
+        </div>
+
+        <!-- Teacher Score Release Status Banner / Unlocked Score -->
+        <div id="submission-score-container">
+          <!-- Dynamically populated score lock or score reveal badge -->
+        </div>
+
+        <p style="color: var(--text-subtle); font-size: 0.8rem; margin-top: 1rem;">
+          Session Token ID: <code style="color: var(--accent-cyan);">MIL-SESSION-2026-PERSISTED</code>
+        </p>
+      </div>
+    </section>
+
+    <!-- VIEW 4: TEACHER DASHBOARD & SCORE RELEASE PORTAL -->
+    <section id="view-teacher" class="view-section">
+      <div class="teacher-wrapper glass-card">
+        <div class="teacher-header">
+          <div>
+            <h2 style="font-family: var(--font-heading); font-size: 1.5rem;">Teacher Control Dashboard</h2>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Manage exam submissions, review anti-cheat violation reports, and release numerical scores.</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button id="btn-release-all-scores" class="btn-primary" style="background: linear-gradient(135deg, var(--accent-emerald), #059669); padding: 0.5rem 1rem; font-size:0.85rem;">
+              🔓 Release All Scores
+            </button>
+            <button id="btn-teacher-back" class="btn-secondary" style="padding: 0.5rem 1rem; font-size:0.85rem;">
+              ← Back to Portal
+            </button>
+          </div>
+        </div>
+
+        <!-- Submissions Table -->
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Student & Username</th>
+                <th>Submission Time</th>
+                <th>Meme Tier</th>
+                <th>Anti-Cheat Violations</th>
+                <th>Raw Score (Teacher Only)</th>
+                <th>Score Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="teacher-submissions-tbody">
+              <!-- Dynamically populated student attempts -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Firebase SDK (v10 compat mode for full offline & realtime support) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+  <!-- Core JavaScript Modular Application Code -->
+  <script src="app.js"></script>
+</body>
+</html>
