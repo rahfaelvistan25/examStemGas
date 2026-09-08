@@ -18,12 +18,12 @@
   // Firebase Configuration & Firestore Initialization
   // --------------------------------------------------------------------------
   const firebaseConfig = {
-    apiKey: "AIzaSyDU2TOqGQOGmVobvHGonfxUQPO_7vhzof0",
-    authDomain: "exam-2-46022.firebaseapp.com",
-    projectId: "exam-2-46022",
-    storageBucket: "exam-2-46022.firebasestorage.app",
-    messagingSenderId: "696887238754",
-    appId: "1:696887238754:web:4637b731deb52db592713b"
+    apiKey: "AIzaSyDiFMw9q1-xD0vX3WlciiOmsKewLVlGhB0",
+    authDomain: "exam2-71a39.firebaseapp.com",
+    projectId: "exam2-71a39",
+    storageBucket: "exam2-71a39.firebasestorage.app",
+    messagingSenderId: "370998951257",
+    appId: "1:370998951257:web:0b97881bbd8526522e6048"
   };
 
   let db = null;
